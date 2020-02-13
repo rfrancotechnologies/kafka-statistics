@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+    <Version>1.0.1</Version>
+    <PackageId>Com.RFranco.Kafka.Statistics.Prometheus</PackageId>
+    <Title>KafkaStatisticsPrometheusHandlerNet</Title>
+    <Description>Prometheus statistics Handler for Apache Kafka consumers and producers in .Net</Description>
+    <Authors>Ruben Martinez; Javier Solana</Authors>
+    <Copyright>Copyright R.Franco Technologies 2020</Copyright>
+    <PackageTags>Apache Kafka Statistics Librdkafka Instrumentation Prometheus DotNet Metrics</PackageTags>
+    <PackageLicenseExpression>LGPL-3.0-or-later</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/rfrancotechnologies/kafka-statistics</PackageProjectUrl>
+    <PackageIconUrl>http://www.rfranco.com/rfjobs/wp-content/uploads/2018/06/logo_pica_grupo.png</PackageIconUrl>
+    <IncludeSource>false</IncludeSource>
+    <PackageReleaseNotes>
+      Removed Factory.
+    </PackageReleaseNotes>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="prometheus-net" Version="3.2.1" />
+    <PackageReference Include="Com.RFranco.Kafka.Statistics" Version="1.0.0" />
+  </ItemGroup>  
+</Project>

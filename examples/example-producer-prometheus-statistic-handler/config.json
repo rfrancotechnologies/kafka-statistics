@@ -1,0 +1,16 @@
+{
+    "topic": "sample.topic3",
+    "producerConf": {
+        "clientid": "sample_client_id",
+        "bootstrapServers": "localhost:9092",
+        "Acks": "0",
+        "BatchNumMessages": "2000",
+        "LingerMs": "1000",
+        "CompressionType": "zstd",
+        "StatisticsIntervalMs": 10
+    },
+    "prometheusMetrics": {
+        "enabled": "false",
+        "port": "9096"
+    }
+}

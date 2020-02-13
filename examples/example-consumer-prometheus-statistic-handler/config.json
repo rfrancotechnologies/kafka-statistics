@@ -1,0 +1,12 @@
+{
+    "topic": "sample.topic",
+    "consumerConf": {
+        "clientid": "sample_client_id",
+        "bootstrapServers": "localhost:9092",        
+        "StatisticsIntervalMs": 10
+    },
+    "prometheusMetrics": {
+        "enabled": "false",
+        "port": "9096"
+    }
+}

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
+    <Version>1.0.0</Version>
+    <PackageId>Com.RFranco.Kafka.Statistics</PackageId>
+    <Title>KafkaStatisticsHandlerNet</Title>
+    <Description>Statistics Handler for Apache Kafka consumers / producers in .NET</Description>
+    <Authors>Ruben Martinez; Javier Solana</Authors>
+    <Copyright>Copyright R.Franco Technologies 2020</Copyright>
+    <PackageTags>Apache Kafka Statistics handler Librdkafka </PackageTags>
+    <PackageLicenseExpression>LGPL-3.0-or-later</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/rfrancotechnologies/kafka-statistics</PackageProjectUrl>
+    <PackageIconUrl>http://www.rfranco.com/rfjobs/wp-content/uploads/2018/06/logo_pica_grupo.png</PackageIconUrl>
+    <IncludeSource>false</IncludeSource>
+    <PackageReleaseNotes>
+      First version.
+    </PackageReleaseNotes>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+</Project>
