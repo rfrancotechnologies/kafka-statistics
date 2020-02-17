@@ -1,4 +1,40 @@
 {
+  "__inputs": [
+    {
+      "name": "DS_PROMETHEUS",
+      "label": "Prometheus",
+      "description": "",
+      "type": "datasource",
+      "pluginId": "prometheus",
+      "pluginName": "Prometheus"
+    }
+  ],
+  "__requires": [
+    {
+      "type": "grafana",
+      "id": "grafana",
+      "name": "Grafana",
+      "version": "6.6.0"
+    },
+    {
+      "type": "panel",
+      "id": "graph",
+      "name": "Graph",
+      "version": ""
+    },
+    {
+      "type": "datasource",
+      "id": "prometheus",
+      "name": "Prometheus",
+      "version": "1.0.0"
+    },
+    {
+      "type": "panel",
+      "id": "singlestat",
+      "name": "Singlestat",
+      "version": ""
+    }
+  ],
   "annotations": {
     "list": [
       {
@@ -15,13 +51,13 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 1,
-  "iteration": 1581931695741,
+  "id": null,
+  "iteration": 1581955572773,
   "links": [],
   "panels": [
     {
       "collapsed": true,
-      "datasource": null,
+      "datasource": "${DS_PROMETHEUS}",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -35,7 +71,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "Prometheus",
+          "datasource": "${DS_PROMETHEUS}",
           "description": "Number of ops (callbacks, events, etc) waiting in queue for application to serve with rd_kafka_poll()",
           "fill": 1,
           "fillGradient": 0,
@@ -125,7 +161,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "description": "Number of connection attempts, including successful and failed, and name resolution failures.",
           "fill": 1,
           "fillGradient": 0,
@@ -213,7 +249,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "description": "Broker latency / round-trip time in microseconds.",
           "fill": 1,
           "fillGradient": 0,
@@ -301,7 +337,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "description": "Number of disconnects (triggered by broker, network, load-balancer, etc.).",
           "fill": 1,
           "fillGradient": 0,
@@ -389,7 +425,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -476,7 +512,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -563,7 +599,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -651,7 +687,7 @@
     },
     {
       "collapsed": true,
-      "datasource": null,
+      "datasource": "${DS_PROMETHEUS}",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -665,7 +701,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -752,7 +788,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -843,7 +879,7 @@
             "rgba(237, 129, 40, 0.89)",
             "#d44a3a"
           ],
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "format": "none",
           "gauge": {
             "maxValue": 100,
@@ -927,7 +963,7 @@
             "rgba(237, 129, 40, 0.89)",
             "#d44a3a"
           ],
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "format": "bytes",
           "gauge": {
             "maxValue": 100,
@@ -1007,7 +1043,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -1094,7 +1130,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -1181,7 +1217,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -1268,7 +1304,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -1355,7 +1391,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -1442,7 +1478,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -1529,7 +1565,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -1616,7 +1652,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -1703,7 +1739,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -1790,7 +1826,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -1877,7 +1913,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -1964,7 +2000,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "description": "Number of disconnects (triggered by broker, network, load-balancer, etc.).",
           "fill": 1,
           "fillGradient": 0,
@@ -2052,7 +2088,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "description": "",
           "fill": 1,
           "fillGradient": 0,
@@ -2140,7 +2176,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "description": "Internal request queue latency in microseconds. This is the time between a request is enqueued on the transmit (outbuf) queue and the time the request is written to the TCP socket. Additional buffering and latency may be incurred by the TCP stack and network",
           "fill": 1,
           "fillGradient": 0,
@@ -2228,7 +2264,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "description": "",
           "fill": 1,
           "fillGradient": 0,
@@ -2316,7 +2352,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "description": "",
           "fill": 1,
           "fillGradient": 0,
@@ -2404,7 +2440,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "description": "",
           "fill": 1,
           "fillGradient": 0,
@@ -2493,7 +2529,7 @@
     },
     {
       "collapsed": true,
-      "datasource": null,
+      "datasource": "${DS_PROMETHEUS}",
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -2507,7 +2543,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "Prometheus",
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -2596,7 +2632,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -2683,7 +2719,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -2770,7 +2806,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "Prometheus",
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -2859,7 +2895,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -2946,7 +2982,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "Prometheus",
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -3035,7 +3071,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -3122,7 +3158,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "Prometheus",
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -3211,7 +3247,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "description": "Total number of messages consumed, not including ignored messages per partition",
           "fill": 1,
           "fillGradient": 0,
@@ -3300,7 +3336,7 @@
           "cacheTimeout": null,
           "dashLength": 10,
           "dashes": false,
-          "datasource": null,
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -3390,7 +3426,7 @@
           "bars": false,
           "dashLength": 10,
           "dashes": false,
-          "datasource": "Prometheus",
+          "datasource": "${DS_PROMETHEUS}",
           "fill": 1,
           "fillGradient": 0,
           "gridPos": {
@@ -3487,33 +3523,17 @@
     "list": [
       {
         "allValue": null,
-        "current": {
-          "text": "",
-          "value": [
-            ""
-          ]
-        },
-        "datasource": "Prometheus",
+        "current": {},
+        "datasource": "${DS_PROMETHEUS}",
         "definition": "label_values(client_id)",
         "hide": 0,
         "includeAll": true,
         "label": "Client Id",
         "multi": true,
         "name": "client_id",
-        "options": [
-          {
-            "selected": false,
-            "text": "All",
-            "value": "$__all"
-          },
-          {
-            "selected": false,
-            "text": "sample_client_id",
-            "value": "sample_client_id"
-          }
-        ],
+        "options": [],
         "query": "label_values(client_id)",
-        "refresh": 0,
+        "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
         "sort": 0,
@@ -3525,38 +3545,17 @@
       },
       {
         "allValue": null,
-        "current": {
-          "text": "",
-          "value": [
-            ""
-          ]
-        },
-        "datasource": "Prometheus",
+        "current": {},
+        "datasource": "${DS_PROMETHEUS}",
         "definition": "label_values(broker_id)",
         "hide": 0,
         "includeAll": true,
         "label": "Broker Id",
         "multi": true,
         "name": "broker_id",
-        "options": [
-          {
-            "selected": false,
-            "text": "All",
-            "value": "$__all"
-          },
-          {
-            "selected": false,
-            "text": "-1",
-            "value": "-1"
-          },
-          {
-            "selected": false,
-            "text": "1",
-            "value": "1"
-          }
-        ],
+        "options": [],
         "query": "label_values(broker_id)",
-        "refresh": 0,
+        "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
         "sort": 0,
@@ -3568,33 +3567,17 @@
       },
       {
         "allValue": null,
-        "current": {
-          "text": "",
-          "value": [
-            ""
-          ]
-        },
-        "datasource": "Prometheus",
+        "current": {},
+        "datasource": "${DS_PROMETHEUS}",
         "definition": "label_values(topic)",
         "hide": 0,
         "includeAll": true,
         "label": "Topic",
         "multi": true,
         "name": "topic",
-        "options": [
-          {
-            "selected": false,
-            "text": "All",
-            "value": "$__all"
-          },
-          {
-            "selected": false,
-            "text": "test.topic2",
-            "value": "test.topic2"
-          }
-        ],
+        "options": [],
         "query": "label_values(topic)",
-        "refresh": 0,
+        "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
         "sort": 0,
@@ -3606,38 +3589,17 @@
       },
       {
         "allValue": null,
-        "current": {
-          "text": "",
-          "value": [
-            ""
-          ]
-        },
-        "datasource": "Prometheus",
+        "current": {},
+        "datasource": "${DS_PROMETHEUS}",
         "definition": "label_values(partition_id)",
         "hide": 0,
         "includeAll": true,
         "label": "Partition Id",
         "multi": true,
         "name": "partition_id",
-        "options": [
-          {
-            "selected": false,
-            "text": "All",
-            "value": "$__all"
-          },
-          {
-            "selected": false,
-            "text": "-1",
-            "value": "-1"
-          },
-          {
-            "selected": false,
-            "text": "0",
-            "value": "0"
-          }
-        ],
+        "options": [],
         "query": "label_values(partition_id)",
-        "refresh": 0,
+        "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
         "sort": 0,
@@ -3649,28 +3611,17 @@
       },
       {
         "allValue": null,
-        "current": {
-          "text": "",
-          "value": [
-            ""
-          ]
-        },
-        "datasource": "Prometheus",
+        "current": {},
+        "datasource": "${DS_PROMETHEUS}",
         "definition": "label_values(app_kubernetes_io_name)",
         "hide": 0,
         "includeAll": true,
         "label": "Application Name",
         "multi": true,
         "name": "app_name",
-        "options": [
-          {
-            "selected": false,
-            "text": "All",
-            "value": "$__all"
-          }
-        ],
+        "options": [],
         "query": "label_values(app_kubernetes_io_name)",
-        "refresh": 0,
+        "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
         "sort": 0,
@@ -3703,5 +3654,5 @@
   "timezone": "",
   "title": "IRIS Kafka Consumers / Producers",
   "uid": "MNo7BGwZz",
-  "version": 16
+  "version": 19
 }
