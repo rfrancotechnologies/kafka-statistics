@@ -33,6 +33,7 @@ namespace Com.Rfranco.TestKafkaStatistics
                     Console.WriteLine($"An error ocurred producing the event: {error.Reason}");
                     if (error.IsFatal) Environment.Exit(-1);
                 });
+                
                 builder.HandleStatistics(new PrometheusProducerStatisticsHandler(new string[] { "application" }, new string[] { "test-producer-statistics" }));
                 builder.SetKeySerializer(Serializers.Null);
                 builder.SetValueSerializer(Serializers.Utf8);
@@ -59,7 +60,7 @@ namespace Com.Rfranco.TestKafkaStatistics
                         try
                         {
                             var dr = producer.ProduceAsync(configuration.GetValue<string>("topic"), new Message<Null, string> { Value = $"message {numMessages}"});
-                            Console.WriteLine($"Delivered  message {numMessages}");
+                            Console.WriteLine($"Delivered  message {numMessages} : {dr.Result.Value}");
                             Thread.Sleep(1000);
                             numMessages++;
                         }

@@ -61,7 +61,7 @@ namespace Com.RFranco.Kafka.Statistics.Prometheus
             NumberOfRequestAwaitingTransmission = Metrics.CreateGauge("kafka_broker_request_awaiting_total", "Number of requests awaiting transmission to broker", BrokerLevelLabelNames);
             NumberOfMessagesAwaitingTransmission = Metrics.CreateGauge("kafka_broker_message_awaiting_total", "Number of messages awaiting transmission to broker", BrokerLevelLabelNames);
             NumberOfRequestInFlight = Metrics.CreateGauge("kafka_broker_request_in_flight_total", "Number of requests in-flight to broker awaiting response", BrokerLevelLabelNames);
-            NumberOfMessagesInFlight = Metrics.CreateGauge("kafka_broker_message_in_flight_total", "Number of messages in-flight to broker awaitign response", BrokerLevelLabelNames);
+            NumberOfMessagesInFlight = Metrics.CreateGauge("kafka_broker_message_in_flight_total", "Number of messages in-flight to broker awaiting response", BrokerLevelLabelNames);
             TotalNumberOfRequestSent = Metrics.CreateGauge("kafka_broker_request_sent_total", "Total number of requests sent", BrokerLevelLabelNames);
             TotalNumberOfBytesSent = Metrics.CreateGauge("kafka_broker_request_sent_bytes_total", "Total number of bytes sent", BrokerLevelLabelNames);
             TotalNumberOfTransmissionErrors = Metrics.CreateGauge("kafka_broker_error_total", "Total number of transmission errors", BrokerLevelLabelNames);
@@ -82,7 +82,7 @@ namespace Com.RFranco.Kafka.Statistics.Prometheus
 
             PartitionTotalNumberOfMessagesProduced = Metrics.CreateGauge("kafka_partition_transmitted_message_total", "Total number of messages transmitted (produced)", PartitionLevelLabelNames);
             PartitionTotalNumberOfBytesProduced = Metrics.CreateGauge("kafka_partition_transmitted_message_bytes_total", "Total number of bytes transmitted for txmsgs", PartitionLevelLabelNames);
-            PartitionNumberOfMessagesInFlight = Metrics.CreateGauge("kafka_partition_message_in_flight_total", "	Current number of messages in-flight to/from broker", PartitionLevelLabelNames);
+            PartitionNumberOfMessagesInFlight = Metrics.CreateGauge("kafka_partition_message_in_flight_total", "Current number of messages in-flight to/from broker", PartitionLevelLabelNames);
             PartitionNextExpectedAckSequence = Metrics.CreateGauge("kafka_partition_next_expected_ack", "Next expected acked sequence (idempotent producer)", PartitionLevelLabelNames);
             PartitionLastInternalMessageIdAcked = Metrics.CreateGauge("kafka_partition_last_message_id_acked", "Last acked internal message id (idempotent producer)", PartitionLevelLabelNames);
         }

@@ -48,7 +48,7 @@ namespace Com.RFranco.Kafka.Statistics.Prometheus
 
 
             //PER BROKER (add Broker NodeId as label)
-            TotalNumberOfResponsesReceived = Metrics.CreateGauge("kafka_broker_responses_total", "otal number of responses received.", BrokerLevelLabelNames);
+            TotalNumberOfResponsesReceived = Metrics.CreateGauge("kafka_broker_responses_total", "Total number of responses received.", BrokerLevelLabelNames);
             TotalNumberOfBytesReceived = Metrics.CreateGauge("kafka_broker_responses_byte_total", "Total number of bytes received.", BrokerLevelLabelNames);
             TotalNumberOfReceivedErrors = Metrics.CreateGauge("kafka_broker_error_total", "Total number of receive errors.", BrokerLevelLabelNames);
             NumberOfConnectionAttemps = Metrics.CreateGauge("kafka_broker_connection_total", "Number of connection attempts, including successful and failed, and name resolution failures.", BrokerLevelLabelNames);
