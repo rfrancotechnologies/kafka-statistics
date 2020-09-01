@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net461</TargetFrameworks>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <PackageId>Com.RFranco.Kafka.Statistics.Prometheus</PackageId>
     <Title>KafkaStatisticsPrometheusHandlerNet</Title>
     <Description>Prometheus statistics Handler for Apache Kafka consumers and producers in .Net</Description>
@@ -13,11 +13,11 @@
     <PackageIconUrl>http://www.rfranco.com/rfjobs/wp-content/uploads/2018/06/logo_pica_grupo.png</PackageIconUrl>
     <IncludeSource>false</IncludeSource>
     <PackageReleaseNotes>
-      Removed Factory.
+      Updated Com.RFranco.Kafka.Statistics to  1.5.0
     </PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="prometheus-net" Version="3.2.1" />
-    <PackageReference Include="Com.RFranco.Kafka.Statistics" Version="1.0.0" />
+    <PackageReference Include="Com.RFranco.Kafka.Statistics" Version="1.5.0" />
   </ItemGroup>  
 </Project>
